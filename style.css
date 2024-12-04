@@ -1,0 +1,71 @@
+:root{
+    --primary:hsl(218, 23%, 16%);
+    --secondary:hsl(217, 19%, 24%);
+    --decent:hsl(150, 100%, 66%);
+}
+body{
+    color: white;
+    background-color: var(--primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"Manrope", sans-serif ;
+   
+}
+p{
+    min-width: 100%;
+}
+main{
+    background-color: var(--secondary);
+    padding: 40px 20px;
+    border-radius: 15px;
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+svg{
+    width: 100%;
+    transform: translate(212)
+}
+#AdviceID{
+    color: var(--decent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+#Advice{
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+#dice{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:-50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--decent);
+    transition: 200ms linear;
+    &:hover{
+        box-shadow: 0px 0px 10px var(--decent), 0px 0px 10px var(--decent);
+    }
+}
+
+@media screen and (max-width:720px) {
+   main{
+    width: 80%;
+   }
+   svg{
+    width: 100%;
+    transform: translate(138)
+}
+}
